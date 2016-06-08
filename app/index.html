@@ -3,13 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>4 2 Etsy Recreation</title>
+    <title>D9 4.2 Etsy Recreation</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-
-    <h1>Hello World!</h1>
-
+    <div class="headerblock" id="headerblockID">
+      <header class="headertop">
+        <div class="col-xs-12">
+          <img id="logo" src="images/Etsy_org_logo.png" alt="Etsy logo" />
+        </div>
+        <div class="search">
+          <form class="form-inline">
+            <div class="form-group has-success has-feedback">
+              <div class="input-group">
+                <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Search for items or shops">
+                <span class="input-group-addon">Search</span>
+              </div>
+              <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
+            </div>
+          </form>
+        </div>
+      </header>
+    </div>
+    <div class="resultsbody">
+      <h2>Hello Etsy!</h2>
+      <script id="header-template" type="text/x-handlebars-template">
+        <div>
+          <div class="col-md-12">
+            <h4>Search results...{{count}} items found</h4>
+          </div>
+        </div>
+      </script>
+    </div>
     <script src="js/bundle.js"></script>
   </body>
 </html>

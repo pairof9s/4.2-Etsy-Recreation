@@ -42,26 +42,29 @@ body {
 }
 
 .headertop {
-  display: block;
+  display: inline-block;
   width: auto;
   height: 80px;
   padding-left: 18px;
   padding-right: 18px;
+  line-height: 80px;
 
   #logo {
-    position: relative;
     width: 75px;
     height: 80px;
     margin-right: 20px;
   }
 
-  & .search {
-    position: relative;
-    width: 35%;
+  .form-group {
+    width: 350px;
   }
 
   .form-control {
     border-color: #CFCBC8;
+  }
+
+  .input-group {
+    width: 100%;
   }
 
   .input-group-addon {

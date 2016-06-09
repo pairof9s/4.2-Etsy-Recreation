@@ -7,33 +7,35 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <section class="headerblock" id="headerblockID">
-      <header class="headertop">
-        <div class="row col-md-12">
-          <img id="logo" src="images/Etsy_org_logo.png" alt="Etsy logo" />
-          <!-- ** Search field ** -->
-          <form class="form-inline">
-            <div class="form-group">
-              <div class="input-group">
-                <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Search for items or shops">
-                <span class="input-group-addon">Search</span>
+    <div class="container-fluid">
+      <section class="headerblock" id="headerblockID">
+        <header class="headertop">
+          <div>
+            <img id="logo" src="images/Etsy_org_logo.png" alt="Etsy logo" />
+            <!-- ** Search field ** -->
+            <form class="form-inline">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Search for items or shops">
+                  <span class="input-group-addon">Search</span>
+                </div>
+                <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
               </div>
-              <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
-            </div>
-          </form> <!-- ** close Search form ** -->
-        </div>
-      </header>
-    </section>
-    <section class="resultsbody">
-      <h2>Hello Etsy!</h2>
-      <script id="header-template" type="text/x-handlebars-template">
-        <div>
-          <div class="col-md-12">
-            <h4>Search results...{{count}} items found</h4>
+            </form> <!-- ** close Search form ** -->
           </div>
-        </div>
-      </script>
-    </section>
+        </header>
+      </section>
+      <section class="resultsbody">
+        <h2>Hello Etsy!</h2>
+        <script id="header-template" type="text/x-handlebars-template">
+          <div>
+            <div class="col-md-12">
+              <!-- <h4>Search results...{{count}} items found</h4> -->
+            </div>
+          </div>
+        </script>
+      </section>
+    </div> <!-- ** close Container-fluid -->
     <script src="js/bundle.js"></script>
   </body>
 </html>

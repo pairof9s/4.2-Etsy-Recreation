@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>D9 4.2 Etsy Recreation</title>
     <link rel="stylesheet" href="css/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container-fluid">
@@ -47,29 +48,72 @@
         </div>
       </div> <!-- ** close Main Nav ** -->
       <section class="lowerbody"> <!-- ** Main Content Area ** -->
-        <div class="sidebar">
-          <div class="cat-box">
+        <div class="sidebar"> <!-- ** Sidebar Area ** -->
+          <div class="cat-box"> <!-- ** Search Categories sidebar ** -->
             <h5>Show results for:</h5>
             <div class="cat-body">
               <div class="cat-list">
-                All Categories
+                <h5>All Categories</h5>
                 <ul>
-                  <li><a href="#" id="cat-title">Craft Supplies &amp; Tools</a></li>
-                  <li><a href="#" id="cat-title">Accessories</a></li>
-                  <li><a href="#" id="cat-title">Home &amp; Living</a></li>
-                  <li><a href="#" id="cat-title">Clothing</a></li>
-                  <li><a href="#" id="cat-title">Jewelry</a></li>
-                  <li><a href="#" id="cat-title">Toys &amp; Games</a></li>
-                  <li><a href="#" id="cat-title">Arts &amp; Collectibles</a></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li><a href="#">Craft Supplies &amp; Tools</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Home &amp; Living</a></li>
+                  <li><a href="#">Clothing</a></li>
+                  <li><a href="#">Jewelry</a></li>
+                  <li><a href="#">Toys &amp; Games</a></li>
+                  <li><a href="#">Arts &amp; Collectibles</a></li>
+                  <li><a href="#">Bags &amp; Purses</a></li>
+                  <li><a href="#">Bath &amp; Beauty</a></li>
+                  <li><a href="#">Paper &amp; Party Supplies</a></li>
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Pet Supplies</a></li>
+                  <li><a href="#">Books, Movies &amp; Music</a></li>
+                  <li><a href="#">Electronics &amp; Accessories</a></li>
+                  <li><a href="#">Wedding</a></li>
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
+          </div> <!-- ** close Search Categories sidebar ** -->
+          <div class="cat-box"> <!-- ** Search Refine sidebar ** -->
+            <h5>Refine your search</h5>
+            <div class="refine-body">
+              <div class="refine-list"> <!-- ** Item Type input ** -->
+                <h5>Item type</h5>
+                <ul>
+                  <li><input class="radio-on" type="radio" name="all" value="" checked><a href="#"><span id="bump">All items</span></a></li>
+                  <li><input class="radio-off" type="radio" name="hand" value=""><a href="#"><span id="bump">Handmade</span></a></li>
+                  <li><input class="radio-off" type="radio" name="name" value=""><a href="#"><span id="bump">Vintage</span></a></li>
+                </ul>
+              </div> <!-- ** close Item Type ** -->
+              <div class="refine-list-b"> <!-- ** Price Range input ** -->
+                <h5>Price ($)</h5>
+                <div class="price-fields">
+                  <div class="price-box1"><input class="price-amt" type="text" name="low" value="" placeholder="Low"></div>
+                  <div class="form-sep"><span id="id-form-sep">to</span></div>
+                  <div class="price-box2"><input class="price-amt" type="text" name="low" value="" placeholder="High"></div>
+                  <div><input class="price-btn" type="button" name="name" value=""><span class="price-indicate"></span></div>
+                </div>
+              </div> <!-- ** close Price Range ** -->
+              <div class="color-box"> <!-- ** Color Selection input ** -->
+                <h5 class="filter-title">Filter by color</h5>
+                <ul>
+                  <li><span id="swatch-red"></span></li>
+                  <li><span id="swatch-orange"></span></li>
+                  <li><span id="swatch-yellow"></span></li>
+                  <li><span id="swatch-green"></span></li>
+                  <li><span id="swatch-blue"></span></li>
+                  <li><span id="swatch-purple"></span></li>
+                  <li><span id="swatch-black"></span></li>
+                  <li><span id="swatch-white"></span></li>
+                </ul>
+              </div> <!-- ** close Color Selection ** -->
+            </div>
+          </div> <!-- ** close Search Refine sidebar ** -->
+        </div> <!-- ** close Sidebar Area ** -->
         <div class="resultsbody">
+          <div class="search-results">
+            <h3>Top categories for "yarn"</h3>
+          </div>
         </div>
       </section> <!-- ** close Main Content Area ** -->
     </div> <!-- ** close Container-fluid -->

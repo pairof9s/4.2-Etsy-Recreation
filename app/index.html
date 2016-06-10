@@ -10,7 +10,7 @@
     <div class="container-fluid">
       <section class="headerblock" id="headerblockID">
         <header class="headertop">
-          <div>
+          <div> <!-- ** Brand & Search ** -->
             <img id="logo" src="images/Etsy_org_logo.png" alt="Etsy logo" />
             <!-- ** Search field ** -->
             <form class="form-inline">
@@ -22,19 +22,56 @@
                 <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
               </div>
             </form> <!-- ** close Search form ** -->
-          </div>
+            <ul class="uni-nav"> <!-- ** Top Universal Nav ** -->
+              <li id="sell-etsy"><a href="#">Sell on Etsy</a></li>
+              <li><span class="u-nav-icon"><i class="glyphicon glyphicon-home"></i></span><span class="u-nav-link"><a href="#" class="u-text-link">Home</a></span></li>
+              <li><span class="u-nav-icon"><i class="glyphicon glyphicon-heart"></i></span><span class="u-nav-link"><a href="#" class="u-text-link">Favorites</a></span></li>
+              <li><span class="u-nav-icon"><i class="glyphicon glyphicon-user"></i></span><span class="u-nav-link"><a href="#" class="u-text-link">You</a></span></li>
+              <li><span class="u-nav-icon"><i class="glyphicon glyphicon-shopping-cart"></i></span><span class="u-nav-link"><a href="#" class="u-text-link">Cart</a></span></li>
+            </ul> <!-- ** close Top Univ Nav ** -->
+          </div> <!-- ** close Brand, Search, & Univ Nav ** -->
         </header>
       </section>
-      <section class="resultsbody">
-        <h2>Hello Etsy!</h2>
-        <script id="header-template" type="text/x-handlebars-template">
-          <div>
-            <div class="col-md-12">
-              <!-- <h4>Search results...{{count}} items found</h4> -->
+      <div class="main-nav"> <!-- ** Main Nav ** -->
+        <div class="nav-bar">
+          <ul class="nav-link">
+            <li><a href="#" class="nav-text">Clothing &amp; Accessories</a></li>
+            <li><a href="#" class="nav-text">Jewelry</a></li>
+            <li><a href="#" class="nav-text">Craft Supplies &amp; Tools</a></li>
+            <li><a href="#" class="nav-text">Weddings</a></li>
+            <li><a href="#" class="nav-text">Entertainment</a></li>
+            <li><a href="#" class="nav-text">Home &amp; Living</a></li>
+            <li><a href="#" class="nav-text">Kids &amp; Baby</a></li>
+            <li><a href="#" class="nav-text">Vintage</a></li>
+          </ul>
+        </div>
+      </div> <!-- ** close Main Nav ** -->
+      <section class="lowerbody"> <!-- ** Main Content Area ** -->
+        <div class="sidebar">
+          <div class="cat-box">
+            <h5>Show results for:</h5>
+            <div class="cat-body">
+              <div class="cat-list">
+                All Categories
+                <ul>
+                  <li><a href="#" id="cat-title">Craft Supplies &amp; Tools</a></li>
+                  <li><a href="#" id="cat-title">Accessories</a></li>
+                  <li><a href="#" id="cat-title">Home &amp; Living</a></li>
+                  <li><a href="#" id="cat-title">Clothing</a></li>
+                  <li><a href="#" id="cat-title">Jewelry</a></li>
+                  <li><a href="#" id="cat-title">Toys &amp; Games</a></li>
+                  <li><a href="#" id="cat-title">Arts &amp; Collectibles</a></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </script>
-      </section>
+        </div>
+        <div class="resultsbody">
+        </div>
+      </section> <!-- ** close Main Content Area ** -->
     </div> <!-- ** close Container-fluid -->
     <script src="js/bundle.js"></script>
   </body>
